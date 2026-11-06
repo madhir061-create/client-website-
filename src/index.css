@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-neon-orange: #ff5500;
+    --color-electric-red: #ff1a35;
+    --color-cyber-amber: #ff9100;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #070709;
+    color: #f4f4f6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Oswald', 'Cabinet Grotesk', sans-serif;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  .font-display {
+    font-family: 'Cabinet Grotesk', 'Oswald', sans-serif;
+  }
+
+  .font-mono-tech {
+    font-family: 'Space Grotesk', monospace;
+  }
+}
+
+/* Custom glow utilities */
+.glow-orange {
+  text-shadow: 0 0 20px rgba(255, 85, 0, 0.6), 0 0 40px rgba(255, 85, 0, 0.3);
+}
+
+.glow-red {
+  text-shadow: 0 0 20px rgba(255, 26, 53, 0.6), 0 0 40px rgba(255, 26, 53, 0.3);
+}
+
+.box-glow-orange {
+  box-shadow: 0 0 35px -5px rgba(255, 85, 0, 0.4), 0 0 15px -3px rgba(255, 85, 0, 0.3);
+}
+
+.box-glow-red {
+  box-shadow: 0 0 35px -5px rgba(255, 26, 53, 0.4), 0 0 15px -3px rgba(255, 26, 53, 0.3);
+}
+
+.box-glow-subtle {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(255, 85, 0, 0.15);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(14, 14, 18, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(22, 22, 28, 0.8) 0%, rgba(12, 12, 16, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 85, 0, 0.35);
+}
+
+/* Carbon & mesh patterns */
+.bg-carbon {
+  background-color: #0a0a0d;
+  background-image: radial-gradient(rgba(255, 85, 0, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-gym-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090c;
+}
+::-webkit-scrollbar-thumb {
+  background: #272732;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5500;
+}

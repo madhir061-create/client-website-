@@ -1,0 +1,8 @@
+{
+  "name": "KINETIX Ultra 3D Gym & Fitness Club",
+  "description": "An immersive, cinematic 3D fitness experience featuring interactive bodybuilder anatomy, elite equipment simulations, customized training programs, and luxury wellness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
